@@ -8,7 +8,7 @@
     <Authors>dotnet-outdated Team &amp; Contributors</Authors>
     <Copyright>Copyright (c) Jerrie Pelser</Copyright>
     <LangVersion>latest</LangVersion>
-    <PackageId>DotNetOutdatedTool.Core</PackageId>
+    <PackageId>Sowa705.DotNetOutdatedTool.Core</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/dotnet-outdated/dotnet-outdated</PackageProjectUrl>
     <PackageReleaseNotes>See $(PackageProjectUrl)/blob/master/CHANGELOG.md#$(VersionSuffix.Replace('.','')) for release notes.</PackageReleaseNotes>

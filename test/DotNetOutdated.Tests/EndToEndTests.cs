@@ -21,7 +21,7 @@ public static class EndToEndTests
         var actual = Program.Main([project.Path]);
         Assert.Equal(0, actual);
     }
-    
+
     [Theory]
     [InlineData("development-dependencies-lock",  "", 0)]
     [InlineData("development-dependencies-lock",  "linux-x64", 0)]
@@ -36,7 +36,7 @@ public static class EndToEndTests
         {
             list.Add($"--runtime {runtime}");
         }
-        
+
         var actual = Program.Main([.. list]);
         Assert.Equal(expectedExitCode, actual);
     }

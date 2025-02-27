@@ -47,10 +47,10 @@ jobs:
           VERSION=`cat semver.txt`
           OUTPUT=${{ runner.temp }}/nupkgs
           echo "version=$VERSION" >> $GITHUB_OUTPUT
-          echo "core_package_name=DotNetOutdatedTool.Core.$VERSION.nupkg" >> $GITHUB_OUTPUT
-          echo "core_package_filename=$OUTPUT/DotNetOutdatedTool.Core.$VERSION.nupkg" >> $GITHUB_OUTPUT
-          echo "tool_package_name=dotnet-outdated-tool.$VERSION.nupkg" >> $GITHUB_OUTPUT
-          echo "tool_package_filename=$OUTPUT/dotnet-outdated-tool.$VERSION.nupkg" >> $GITHUB_OUTPUT
+          echo "core_package_name=Sowa705.DotNetOutdatedTool.Core.$VERSION.nupkg" >> $GITHUB_OUTPUT
+          echo "core_package_filename=$OUTPUT/Sowa705.DotNetOutdatedTool.Core.$VERSION.nupkg" >> $GITHUB_OUTPUT
+          echo "tool_package_name=Sowa705.dotnet-outdated-tool.$VERSION.nupkg" >> $GITHUB_OUTPUT
+          echo "tool_package_filename=$OUTPUT/Sowa705.dotnet-outdated-tool.$VERSION.nupkg" >> $GITHUB_OUTPUT
           dotnet build --configuration Release
           dotnet pack --configuration Release /p:Version=$VERSION /p:PackageOutputPath=$OUTPUT
 
