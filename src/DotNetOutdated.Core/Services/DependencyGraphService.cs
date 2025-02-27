@@ -30,6 +30,7 @@ namespace DotNetOutdated.Core.Services
 
             if (!string.IsNullOrEmpty(runtime))
             {
+                Console.WriteLine($"Argument: '{runtime}'");
                 arguments.Add($"/p:RuntimeIdentifiers={runtime}");
             }
 
